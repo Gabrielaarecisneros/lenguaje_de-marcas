@@ -1,0 +1,107 @@
+:root{ 
+    --blanco:#ffffff;
+    --negro: #000000;
+    --primario: #12db0b;
+    --secundario: #0097a7;
+    --gris: #757575;
+    --naranja: #ffdac1;
+    --verdito: #c4c39c;
+    --naranjito: #ffda9e;
+    --lila: #c8c4ef;
+    
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box; 
+    background-image: url(../images/movii.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ 
+body{
+    font-size: 16px; 
+  
+       
+}
+
+header{
+    padding: 3rem 2rem;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+header h1{
+   
+    color: rgba(0,0,0);
+    font-size: 4rem; 
+    text-align: center;
+  
+}
+
+
+.container{
+
+    width: 500px; 
+    margin: 0 auto; /*centra todo*/
+    
+}
+
+section article{
+         
+    background-color: rgb(209, 122, 139);
+    margin: 1rem 0; 
+    border-radius: 0.5rem;
+    padding: 0.25rem 0;
+     
+}
+.sombraCaja{
+    
+        position: relative;
+      
+}
+
+.nav-background{
+    background-color: var(--naranjito);
+}
+.navPrincipal{
+    
+    display: flex;
+    flex-direction: column;
+    background-color: #c8c4ef;
+}
+@media (min-width: 768px) {
+    .navPrincipal{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.navPrincipal a{
+    color: var(--blanco);/*Para obtener una descripción general del uso del color en HTML*/
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem;
+    text-align: center;
+}
+.navPrincipal a:hover{
+    background-color: var(--lila);
+    color: var(--negro);
+}
+.post{
+    text-align: center;
+}
+/*footer*/
+
+.footer{
+    text-align: center;
+   
+    margin-top: 5rem;
+    
+}
+.footer a{
+    text-decoration: none;
+    color: #000000;
+}

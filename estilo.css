@@ -1,0 +1,110 @@
+:root{ /*customProperty*/
+    --blanco:#ffffff;
+    --negro: #000000;
+    --primario: #dac68c;
+    --secundario: #0097a7;
+    --gris: #757575;
+    --naranja: #ffdac1;
+    --verdito: #c4c39c;
+    --naranjito: #ffda9e;
+    --lila: #c8c4ef;
+    
+}
+/* Globales */
+html{
+    font-size: 62.5%;
+    box-sizing: border-box; /* Hack para Box Model*/
+    background-image: url(images/ani.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ 
+body{
+    font-size: 16px; /*1rem=10px*/
+    font-family: Georgia, 'Times New Roman', Times, serif;
+       
+}
+
+header{
+    padding: 3rem 2rem;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+header h1{
+   
+    color: rgba(0,0,0);
+    font-size: 4rem; /*4x16*/
+    text-align: center;
+    -webkit-box-shadow: -1px 2px 25px 8px rgba(201,161,201,1);
+    -moz-box-shadow: -1px 2px 25px 8px rgba(201,161,201,1);
+    box-shadow: -1px 2px 25px 8px rgba(201,161,201,1);
+
+}
+
+/* las imagenes tienen un ancho de 400px por eso pongo 400px*/
+
+.container{
+
+    width: 400px; 
+    margin: 0 auto; /*para que se centre todo*/
+    
+}
+
+section article{
+         
+    background-color: var(--naranja);
+    margin: 1rem 0; /* 1 vertical 0 horizontal*/
+    border-radius: 0.5rem; /*para modelar las esquinas*/
+    padding: 0.25rem 0;
+     
+}
+.sombraCaja{
+    -webkit-box-shadow: -1px 2px 25px 8px rgba(201,161,201,1);
+    -moz-box-shadow: -1px 2px 25px 8px rgba(201,161,201,1);
+    box-shadow: -1px 2px 25px 8px rgba(201,161,201,1);
+}
+
+.nav-background{
+    background-color: var(--lila);
+}
+.navPrincipal{
+    
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width: 768px) {
+    .navPrincipal{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.navPrincipal a{
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem;
+    text-align: center;
+}
+.navPrincipal a:hover{
+    background-color: var(--primario);
+    color: var(--negro);
+}
+.post{
+    text-align: center;
+}
+/*footer*/
+
+.footer{
+    text-align: center;
+    background-color: var(--lila);
+    margin-top: 5rem;
+    
+}
+.footer a{
+    text-decoration: none;
+    color: #000000;
+}
